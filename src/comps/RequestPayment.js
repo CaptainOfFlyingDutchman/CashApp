@@ -4,7 +4,7 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import NumPad from './NumPad';
 
 class RequestPayment extends Component {
-  static navigationOptions = ({ navigation }) => ({
+  static navigationOptions = () => ({
     header: null
   });
 
