@@ -5,9 +5,14 @@
       "object-curly-newline": "off",
       "comma-dangle": "off",
       "no-underscore-dangle": "off",
+      "object-property-newline": "off",
+      "max-len": ["off", { "code": 120 }],
+      "no-unused-expressions": "off",
       "react/jsx-filename-extension": "off",
       "react/jsx-closing-bracket-location": "off",
-      "react/forbid-prop-types": "off"
+      "react/forbid-prop-types": "off",
+      "react/jsx-max-props-per-line": "off",
+      "react/jsx-first-prop-new-line": "off"
     },
     "parser": "babel-eslint"
 }

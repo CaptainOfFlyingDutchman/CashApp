@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { View, Text, TouchableOpacity } from 'react-native';
+import { connect } from 'react-redux';
 
 import NumPad from './NumPad';
 
@@ -7,6 +9,10 @@ class RequestPayment extends Component {
   static navigationOptions = () => ({
     header: null
   });
+
+  static propTypes = {
+    numPad: PropTypes.object.isRequired
+  };
 
   render() {
     return (
@@ -25,7 +31,11 @@ class RequestPayment extends Component {
 
         <View style={{ justifyContent: 'center' }}>
           <Text style={{ fontSize: 67, padding: 57, textAlign: 'center' }}>
-            <Text style={{ fontSize: 18 }}>$</Text>23,566
+            <Text style={{ fontSize: 22 }}>$</Text>
+            { this.props.numPad.characteristic.length ? this.props.numPad.characteristic : 0 }
+            <Text style={{ fontSize: 37 }}>.
+              { this.props.numPad.mantissa.length ? this.props.numPad.mantissa : 0 }
+            </Text>
           </Text>
         </View>
 
@@ -43,6 +53,8 @@ class RequestPayment extends Component {
       </View>
     );
   }
-};
+}
 
-export default RequestPayment;
+export default connect(state => ({
+  numPad: state.numPad
+}))(RequestPayment);
