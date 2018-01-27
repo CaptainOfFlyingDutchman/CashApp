@@ -2,7 +2,11 @@
     "extends": "airbnb",
     "rules": {
       "arrow-body-style": "off",
+      "object-curly-newline": "off",
+      "comma-dangle": "off",
+      "no-underscore-dangle": "off",
       "react/jsx-filename-extension": "off",
-      "object-curly-newline": "off"
+      "react/jsx-closing-bracket-location": "off",
+      "react/forbid-prop-types": "off"
     }
 }

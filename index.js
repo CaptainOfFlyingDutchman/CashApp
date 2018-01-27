@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './App';
+import Root from './src/nav/Stacks';
 
-AppRegistry.registerComponent('CashApp', () => App);
+AppRegistry.registerComponent('CashApp', () => Root);
