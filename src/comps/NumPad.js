@@ -33,7 +33,7 @@ class NumPad extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View style={[styles.container, { flex: 1 }]}>
         <View style={styles.row}>
           <TouchableOpacity style={styles.buttonContainer} onPress={() => this.dispatchAddValue(1)}>
             <Text style={styles.button}>1</Text>

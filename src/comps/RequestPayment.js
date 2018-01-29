@@ -30,7 +30,7 @@ class RequestPayment extends Component {
         </View>
 
         <View style={{ justifyContent: 'center' }}>
-          <Text style={{ fontSize: 67, padding: 57, textAlign: 'center' }}>
+          <Text style={{ fontSize: 67, textAlign: 'center' }}>
             <Text style={{ fontSize: 22 }}>$</Text>
             { this.props.numPad.characteristic.length ? this.props.numPad.characteristic : 0 }
             <Text style={{ fontSize: 37 }}>.
