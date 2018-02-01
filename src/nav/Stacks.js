@@ -3,6 +3,7 @@ import { StackNavigator } from 'react-navigation';
 import { Provider } from 'react-redux';
 
 import Signup from '../comps/Signup';
+import SignupConfirm from '../comps/SignupConfirm';
 import RequestPayment from '../comps/RequestPayment';
 import StacksContainer from './StacksContainer';
 import getStore from '../store';
@@ -10,6 +11,9 @@ import getStore from '../store';
 export const Stacks = StackNavigator({
   Signup: {
     screen: Signup
+  },
+  SignupConfirm: {
+    screen: SignupConfirm
   },
   RequestPayment: {
     screen: RequestPayment
